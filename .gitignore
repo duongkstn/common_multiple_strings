@@ -1,0 +1,6 @@
+*/build/*
+*/python/common_multiple_strings.cpp
+*.so
+*.o
+.vscode/
+.vscode/*
