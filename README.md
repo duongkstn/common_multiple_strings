@@ -106,17 +106,21 @@ Sample code:
 ```
 
 #### Some Notes: 
-##### - Params:
+#### - Params:
 `times`, default `(None, None)` is a tuple represents the minimum and maximum appearances of the desired output.
-Query substrings appear exactly N times, then `times=(N, N)`
-Query substrings appear more than N times, then `times=(N, None)`
-Query substrings appear less than N times, then `times=(None, N)`
-Query substrings appear less than N times and more than M times, then `times=(M, N)`
+
+Query substrings appear exactly N times, then `times=(N, N)`.
+
+Query substrings appear more than N times, then `times=(N, None)`.
+
+Query substrings appear less than N times, then `times=(None, N)`.
+
+Query substrings appear less than N times and more than M times, then `times=(M, N)`.
 
 `length_input` is an integer, represents the length of substrings
 
-##### - This library accepts various utf8 characters including punctuations, numbers, upper-case characters, ... For more details, checkout `alphabet.cpp` file. Thanks [coccoc-tokenizer](https://github.com/coccoc/coccoc-tokenizer/tree/master/dicts/vn_lang_tool) for providing these available lists 
-##### - Query a) and d) does not output all possible results, but you can use it for analytic purposes.
+#### - This library accepts various utf8 characters including punctuations, numbers, upper-case characters, ... For more details, checkout `alphabet.cpp` file. Thanks [coccoc-tokenizer](https://github.com/coccoc/coccoc-tokenizer/tree/master/dicts/vn_lang_tool) for providing these available lists 
+#### - Query a) and d) does not output all possible results, but you can use it for analytic purposes.
 
 ## Algorithm and Complexity
 Data structure suffix tree is the core of this library. It encourages fast query and efficient storing. 
