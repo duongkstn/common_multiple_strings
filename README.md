@@ -5,6 +5,9 @@
 Having a bunch of strings, can I print some substrings which appear K times ? Can I know which is longest substrings ?
 
 
+## 2024 UPDATE:
+The project is built as PyPI package: https://pypi.org/project/commonstrings/ . Code for PyPI package is moved to: https://github.com/phamthivan2996/commonstrings
+
 ## Installing
 Make sure `Cython` is installed properly !
 
